@@ -25,15 +25,16 @@ const App = () => {
    }
 
    const handleDelete = (event) => {
+    //  console.log(event.target.value);
      axios
-        .delete('https://lit-headland-65632.herokuapp.com/api/dogs', + event.target.value)
+        .delete('https://lit-headland-65632.herokuapp.com/api/dogs/' + event.target.value)
         .then((response)=> {
           getDog()
         })
    }
    const handleUpdate = (editDog) => {
      axios
-        .put('https://lit-headland-65632.herokuapp.com/api/dogs' + editDog.id, editDog)
+        .put('https://lit-headland-65632.herokuapp.com/api/dogs/' + editDog.id, editDog)
         .then((response) => {
           getDog()
         })
@@ -50,13 +51,12 @@ const App = () => {
         return ( 
      
       <div className="dog" key={dog.id}>
-        <h5> ID: {dog.id}</h5>
         <h5>Name: {dog.name}</h5>
         <h5>Breed: {dog.breed}</h5>
         <h5>Age: {dog.age}</h5>
         <h5>Gender: {dog.gender}</h5>
         <h5>Color: {dog.color}</h5>
-        <h5>Image: {dog.image}</h5>
+        <img src={dog.image} />
         <h5>Weight: {dog.weight}</h5>
         <button onClick={handleDelete} value={dog.id}>
 

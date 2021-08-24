@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 
 const Edit = (props) => {
-    let emptyDog = {id: '', name: '', breed: '', age: '', gender: '', color: '', image: '', weight: ''}
+    let emptyDog = {name: '', breed: '', age: '', gender: '', color: '', image: '', weight: ''}
     const [dog, setDog] = useState(emptyDog)
 
     const handleChange = (event) => {
@@ -17,15 +17,7 @@ return (
         <details>
             <summary>Edit Dog</summary>
         <form onSubmit={handleSubmit}>
-            <label htmlFor="id">ID:</label>
-            <input 
-                type="number"
-                name="id"
-                value={dog.id}
-                onChange={handleChange}
-                />
-            <br />
-            <br />
+            
             <label htmlFor="name">Name: </label>
             <input
                 type="text"
