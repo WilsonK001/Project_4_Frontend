@@ -9,7 +9,7 @@ const Edit = (props) => {
     }
     const handleSubmit = (event) =>{
         event.preventDefault()
-        props.handleCreate(dog)
+        props.handleUpdate(dog)
     }
 
 return (
