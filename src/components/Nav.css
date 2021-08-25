@@ -1,0 +1,23 @@
+div{
+    background: cadetblue;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+}
+.logo{
+    font-size: 20px;
+}
+.list__items{
+    display: flex;
+}
+.list__items p{
+    cursor: pointer;
+}
+.list__items p:not(:last-child){
+    margin-right: 20px;
+}

@@ -1,0 +1,39 @@
+.form{
+    padding: 0 200px;
+    height: 300px;
+    margin: 50px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form form div label {
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.form form div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form form div input{
+    border: 1px solid skyblue;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    padding: 5px;
+    width: 300px;
+}
+.add__btn{
+    padding: 10px 20px;
+    margin-top: 20px;
+    width: 100%;
+    background: rgb(21, 255, 0);
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
